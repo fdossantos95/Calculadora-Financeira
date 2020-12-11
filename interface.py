@@ -5,12 +5,12 @@ from PySimpleGUI import PySimpleGUI as sg
 sg.theme('Reddit')
 # layout
 layout = [
-    [sg.Text('Modalidade '),sg.Text('FAST                 '),sg.Text('NORMAL                 ')],
+    [sg.Text('Modalidade '),sg.Text('          FAST       '),sg.Text('          NORMAL       ')],
     [sg.Text('MDR Débito '),sg.Input(key='mdr debito fast '),sg.Input(key='mdr debito normal ')],
-    [sg.Text('MDR Crédito'),sg.Input(key='mdr credito fast'),sg.Input(key='mdr credito normal')],
+    [sg.Text('MDR Crédito'),sg.Input(key='mdr credito fast'),sg.Input(key='mdr_credito_normal')],
     [sg.Text('MDR 2a6X   '),sg.Input(key='mdr 2a6x fast   '),sg.Input(key='mdr 2a6x normal   ')],
     [sg.Text('MDR 7a12X  '),sg.Input(key='mdr 7a12x fast  '),sg.Input(key='mdr 7a12x normal  ')],
-    [sg.Text('RAV        '),sg.Input(key='rav fast        '),sg.Input(key='rav normal        ')],
+    [sg.Text('RAV        '),sg.Input(key='rav fast        '),sg.Input(key='rav_normal        ')],
     [sg.Text('Modalidade'), sg.Text('FAST'),                 sg.Text('NORMAL')],
     [sg.Text('Débito'),     sg.Input(key='debito fast'),     sg.Input(key='debito normal')],
     [sg.Text('Crédito'),    sg.Input(key='credito fast'),    sg.Input(key='credito normal')],
