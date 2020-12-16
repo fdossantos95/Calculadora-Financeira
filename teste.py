@@ -7,7 +7,7 @@ sg.theme('Reddit')
 layout = [
     [sg.Text('Primeiro')],sg.input(key='primeiro')
     [sg.Text('Segundo')],sg.Input(key='segundo')
-    []
+    [sg.Button('OK')]
 ]
 # janela
 # ler os eventos
