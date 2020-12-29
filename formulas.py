@@ -66,7 +66,11 @@ print(f'A taxa MDR de 7 a 12x na simulação Com RAV é {mdr7a12xcomrav}%')
 
 lin()
 sleep(2)
-print('Fim')
+print('Resultado: ')
+
+#Resultado da simulação Fast:
+fast2x = 
+
 
 
 # Resolver problema dp ponto e da virgula em numeros float, ao digitar no teclado o sistema não aceita virgulas, apenas ponto para separar casas decimais.
