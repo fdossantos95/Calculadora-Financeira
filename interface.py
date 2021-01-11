@@ -1,5 +1,6 @@
 from PySimpleGUI import PySimpleGUI as sg 
 
+import tkinter
 
 # tema
 sg.theme('Reddit')
