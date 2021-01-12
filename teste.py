@@ -1,6 +1,5 @@
-from PySimpleGUI import PySimpleGUI as sg 
+import PySimpleGUI as sg 
 
 
-# Layout
-# Janela
-# Ler eventos
+print(sg)
+print(sg.version)
