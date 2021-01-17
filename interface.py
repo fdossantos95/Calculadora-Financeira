@@ -10,11 +10,6 @@ import tkinter
 
 sg.theme('DarkGreen5')
 
-# Definir o tamanho da tela:
-
-WIN_W = 100
-WIN_H = 100
-
 # Definir o menu layout:
 
 menu_layout = [['File',['Save', 'Exit']],
@@ -28,6 +23,7 @@ layout = [
 # Aqui estão as keys para alimentar a calculadora com os dados necessários:
 
 # Aqui começa a ROW menu:
+
     [sg.Menu(menu_layout)],
 
 # Aqui começa a ROW 1:
@@ -45,10 +41,26 @@ layout = [
 # Aqui começa a ROW 3:
 
     [sg.Text('MDR Crédito',size=(10,0)),
-     sg.Input(key='mdr credito fast',size=(10,0)),sg.Input(key='mdr_credito_normal',size=(10,0))],
-    [sg.Text('MDR 2a6X',size=(10,0)),sg.Input(key='mdr 2a6x fast',size=(10,0)),sg.Input(key='mdr 2a6x normal',size=(10,0))],
-    [sg.Text('MDR 7a12X',size=(10,0)),sg.Input(key='mdr 7a12x fast',size=(10,0)),sg.Input(key='mdr 7a12x normal',size=(10,0))],
-    [sg.Text('RAV',size=(10,0)),sg.Input(key='rav fast',size=(10,0)),sg.Input(key='rav_normal',size=(10,0))],
+     sg.Input(key='mdr credito fast',size=(10,0)),
+     sg.Input(key='mdr_credito_normal',size=(10,0))],
+
+# Aqui começa a ROW 4:
+
+    [sg.Text('MDR 2a6X',size=(10,0)),
+     sg.Input(key='mdr 2a6x fast',size=(10,0)),
+     sg.Input(key='mdr 2a6x normal',size=(10,0))],
+
+# Aqui começa a ROW 5:
+
+    [sg.Text('MDR 7a12X',size=(10,0)),
+    sg.Input(key='mdr 7a12x fast',size=(10,0)),
+    sg.Input(key='mdr 7a12x normal',size=(10,0))],
+
+# Aqui começa a ROW 6:
+
+    [sg.Text('RAV',size=(10,0)),
+     sg.Input(key='rav fast',size=(10,0)),
+     sg.Input(key='rav_normal',size=(10,0))],
 
 # Aqui são apresentados os resultados:
 
