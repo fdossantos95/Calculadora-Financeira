@@ -27,11 +27,25 @@ layout = [
 
 # Aqui estão as keys para alimentar a calculadora com os dados necessários:
 
+# Aqui começa a ROW menu:
     [sg.Menu(menu_layout)],
-    [sg.Text('Modalidade',size=(10,0)),sg.Text('FAST',size=(10,0)),sg.Text('NORMAL')],
 
-    [sg.Text('MDR Débito',size=(10,0)),sg.Input(key='mdr_debito_fast',size=(10,0)),sg.Input(key='mdr debito normal',size=(10,0))],
-    [sg.Text('MDR Crédito',size=(10,0)),sg.Input(key='mdr credito fast',size=(10,0)),sg.Input(key='mdr_credito_normal',size=(10,0))],
+# Aqui começa a ROW 1:
+
+    [sg.Text('Modalidade',size=(10,0)),
+     sg.Text('FAST',size=(10,0)),
+     sg.Text('NORMAL')],
+
+# Aqui começa a ROW 2:
+
+    [sg.Text('MDR Débito',size=(10,0)),
+     sg.Input(key= 'mdr_debito_fast',size=(10,0)),
+     sg.Input(key='mdr debito normal',size=(10,0))],
+
+# Aqui começa a ROW 3:
+
+    [sg.Text('MDR Crédito',size=(10,0)),
+     sg.Input(key='mdr credito fast',size=(10,0)),sg.Input(key='mdr_credito_normal',size=(10,0))],
     [sg.Text('MDR 2a6X',size=(10,0)),sg.Input(key='mdr 2a6x fast',size=(10,0)),sg.Input(key='mdr 2a6x normal',size=(10,0))],
     [sg.Text('MDR 7a12X',size=(10,0)),sg.Input(key='mdr 7a12x fast',size=(10,0)),sg.Input(key='mdr 7a12x normal',size=(10,0))],
     [sg.Text('RAV',size=(10,0)),sg.Input(key='rav fast',size=(10,0)),sg.Input(key='rav_normal',size=(10,0))],
@@ -40,7 +54,7 @@ layout = [
 
     [sg.Text('Modalidade',size=(10,0)),sg.Text('FAST',size=(10,0)),sg.Text('NORMAL')],
 
-    [sg.Text('Débito',size=(10,0)),sg.Input(key='mdr_debito_fast',size=(10,0)),sg.Input(key='debito normal',size=(10,0))],
+    [sg.Text('Débito',size=(10,0)),sg.Input(key='mdr debito fast',size=(10,0)),sg.Input(key='debito normal',size=(10,0))],
     [sg.Text('Crédito',size=(10,0)),sg.Input(key='credito fast',size=(10,0)),sg.Input(key='credito normal',size=(10,0))],
     [sg.Text('Parc. 2X',size=(10,0)),sg.Input(key='2x fast',size=(10,0)),sg.Input(key='2x normal',size=(10,0))],
     [sg.Text('Parc. 3X',size=(10,0)),sg.Input(key='3x fast',size=(10,0)),sg.Input(key='3x normal',size=(10,0))],
