@@ -1,12 +1,33 @@
+''' Calculadora para agentes da Stone.Co simularem as taxas por modalidade na hora da venda:'''
+
+# Importar PySimpleGUI:
+
 from PySimpleGUI import PySimpleGUI as sg 
 
 import tkinter
 
-# tema
-sg.theme('Reddit')
-# layout
+# Escolher um tema para a interface: 
+
+sg.theme('DarkGreen5')
+
+# Definir o tamanho da tela:
+
+WIN_W = 100
+WIN_H = 100
+
+# Definir o menu layout:
+
+menu_layout = [['File',['Save', 'Exit']],
+               ['Tools',['Clear']],
+               ['Help',['Support']]]
+
+# Definir o layout da interface: 
+
 layout = [
 
+# Aqui estão as keys para alimentar a calculadora com os dados necessários:
+
+    [sg.Menu(menu_layout)],
     [sg.Text('Modalidade',size=(10,0)),sg.Text('FAST',size=(10,0)),sg.Text('NORMAL')],
 
     [sg.Text('MDR Débito',size=(10,0)),sg.Input(key='mdr_debito_fast',size=(10,0)),sg.Input(key='mdr debito normal',size=(10,0))],
@@ -14,6 +35,8 @@ layout = [
     [sg.Text('MDR 2a6X',size=(10,0)),sg.Input(key='mdr 2a6x fast',size=(10,0)),sg.Input(key='mdr 2a6x normal',size=(10,0))],
     [sg.Text('MDR 7a12X',size=(10,0)),sg.Input(key='mdr 7a12x fast',size=(10,0)),sg.Input(key='mdr 7a12x normal',size=(10,0))],
     [sg.Text('RAV',size=(10,0)),sg.Input(key='rav fast',size=(10,0)),sg.Input(key='rav_normal',size=(10,0))],
+
+# Aqui são apresentados os resultados:
 
     [sg.Text('Modalidade',size=(10,0)),sg.Text('FAST',size=(10,0)),sg.Text('NORMAL')],
 
@@ -32,7 +55,7 @@ layout = [
     [sg.Text('Parc. 12x',size=(10,0)),sg.Input(key='12x fast',size=(10,0)),sg.Input(key='12x normal',size=(10,0))]
 ]
 # window
-janela = sg.Window('CALCULADORA FINANCEIRA', layout)
+janela = sg.Window('SIMULADOR', layout)
 # Ler os eventos
 while True:
     eventos, valores = janela.read()
